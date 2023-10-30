@@ -2,26 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-slate-900
+}
+
+.custom-gradient{
+  background: linear-gradient(90deg, #06B6D4, #9747FF 25%, #9747FF 25%, #06B6D4);
+  background-size: 400% 100%;
+  background-position: 0% 50%;
+  transition: all 300ms ease-in-out;
+}
+
+.custom-gradient:hover{
+  background-position: 50% 100%;
+  box-shadow: #06B6D475 0 0 15px;
+}
+
+.custom-gradient-infinit{
+  background: linear-gradient(90deg, #06B6D4, #9747FF 25%, #9747FF 25%, #06B6D4);
+  background-size: 400% 100%;
+  animation: bg-animate infinite 5s ease;
+}
+
+@keyframes bg-animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

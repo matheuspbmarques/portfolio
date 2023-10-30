@@ -1,3 +1,4 @@
+import { slate } from 'tailwindcss/colors'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -8,13 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
+      colors: {
+        blue: {
+          default: '#06B6D4'
+        },
+        purple: {
+          default: '#9747FF'
+        }
+      }
+    }
+  }
 }
 export default config
