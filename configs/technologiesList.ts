@@ -75,10 +75,6 @@ const technologiesList:Array<TechnologiesListProps> = [
         level: 'basic'
     },
     {
-        name: 'Flutter',
-        level: 'basic'
-    },
-    {
         name: 'Nest',
         level: 'basic'
     },
