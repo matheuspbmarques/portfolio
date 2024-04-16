@@ -31,15 +31,19 @@ const technologiesList:Array<TechnologiesListProps> = [
         level: 'advanced'
     },
     {
+        name: 'Tailwind',
+        level: 'advanced'
+    },
+    {
         name: 'TypeScript',
+        level: 'advanced'
+    },
+    {
+        name: 'Nest',
         level: 'intermedium'
     },
     {
         name: 'Jest',
-        level: 'intermedium'
-    },
-    {
-        name: 'Tailwind',
         level: 'intermedium'
     },
     {
@@ -72,10 +76,6 @@ const technologiesList:Array<TechnologiesListProps> = [
     },
     {
         name: 'Prisma',
-        level: 'basic'
-    },
-    {
-        name: 'Nest',
         level: 'basic'
     },
     {
