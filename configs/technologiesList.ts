@@ -39,6 +39,10 @@ const technologiesList:Array<TechnologiesListProps> = [
         level: 'advanced'
     },
     {
+        name: 'Git',
+        level: 'advanced'
+    },
+    {
         name: 'Nest',
         level: 'intermedium'
     },
@@ -55,6 +59,18 @@ const technologiesList:Array<TechnologiesListProps> = [
         level: 'intermedium'
     },
     {
+        name: 'MariaDB',
+        level: 'intermedium'
+    },
+    {
+        name: 'OracleDB',
+        level: 'intermedium'
+    },
+    {
+        name: 'MongoDB',
+        level: 'intermedium'
+    },
+    {
         name: 'PHP',
         level: 'intermedium'
     },
@@ -67,10 +83,6 @@ const technologiesList:Array<TechnologiesListProps> = [
         level: 'intermedium'
     },
     {
-        name: 'Git',
-        level: 'intermedium'
-    },
-    {
         name: 'Linux',
         level: 'intermedium'
     },
@@ -80,10 +92,6 @@ const technologiesList:Array<TechnologiesListProps> = [
     },
     {
         name: 'Flutter',
-        level: 'basic'
-    },
-    {
-        name: 'MongoDB',
         level: 'basic'
     }
 ]
