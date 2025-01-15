@@ -1,15 +1,8 @@
 'use client'
 
-//Next
 import Image from "next/image"
-
-//Configs
 import fonts from "@/configs/fonts"
 
-//Assets
-import myPhoto from '../assets/IMG_20220414_133959_211.jpeg'
-
-//Props
 interface AboutProps{
     id?: string
 }
@@ -25,7 +18,7 @@ export default function About({ id }:AboutProps){
             </div>
             <div>
                 <div className="flex w-[160px] h-[160px] overflow-hidden rounded-full items-center justify-center sm:w-[200px] sm:h-[200px]">
-                    <Image alt="Minha foto" src={myPhoto} />;
+                    <Image alt="Minha foto" src={'/assets/images/me.webp'} width={1024} height={1024} />
                 </div>
             </div>
         </section>

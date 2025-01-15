@@ -1,16 +1,9 @@
-//Next
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
-import Image from "next/image"
-import Link from "next/link"
-
-//Assets
-import valeLocacoes from '../assets/vale-locacoes.png'
-
-//Configs
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import Link from "next/link";
+import Image from "next/image";
 import fonts from "@/configs/fonts"
-
-//Props
 import { UrlObject } from "url"
+
 interface ProjectCardProps{
     image: string | StaticImport,
     title: string,
@@ -30,7 +23,7 @@ export default function ProjectCard({
 
                 {/**Image */}
                 <div className="w-full rounded-lg overflow-hidden sm:flex-1">
-                    <Image alt="Site vale locacoes" src={image} />
+                    <Image src={image} alt="Imagem do projeto" width={1024} height={768} />
                 </div>{/**Image */}
 
                 <div className="flex flex-col gap-4 sm:flex-1">

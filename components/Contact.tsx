@@ -1,22 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-
-//Next
 import Image from 'next/image'
 import Link from 'next/link'
-
-//Components
 import CustomInput from './CustomInput'
 import CustomTextArea from './CustomTextArea'
-
-//Configs
 import fonts from '@/configs/fonts'
 
-//Assets
-import mailSvg from '../assets/mail.svg'
-
-//Props
 interface ContactProps{
     id?: string
 }
@@ -31,7 +21,7 @@ export default function Contact({ id }:ContactProps){
                 <h2 className={`${fonts.kanitSmallTitle.className} text-slate-100 text-2xl`}>Contate-me</h2>
                 <div className='flex gap-8'>
                     <div className='hidden sm:flex flex-1'>
-                        <Image alt='Ilustração de e-mail' src={ mailSvg } />
+                        <Image alt='Ilustração de e-mail' src={'/assets/svgs/icons/mail.svg'} width={24} height={24} />
                     </div>
                     <div className={`flex-1 flex flex-col ${fonts.kanitText.className} text-slate-100 gap-2`}>
                         <CustomInput label='Título' placeholder='Informe o título da sua mensagem' id='subject' type='text' onChange={e => setSubject(e.currentTarget.value)} />
