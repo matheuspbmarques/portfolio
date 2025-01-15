@@ -21,7 +21,7 @@ export default function Contact({ id }:ContactProps){
                 <h2 className={`${fonts.kanitSmallTitle.className} text-slate-100 text-2xl`}>Contate-me</h2>
                 <div className='flex gap-8'>
                     <div className='hidden sm:flex flex-1'>
-                        <Image alt='Ilustração de e-mail' src={'/assets/svgs/icons/mail.svg'} width={24} height={24} />
+                        <Image alt='Ilustração de e-mail' src={'/assets/svgs/illustrations/email.svg'} width={6 * 64} height={6 * 64} />
                     </div>
                     <div className={`flex-1 flex flex-col ${fonts.kanitText.className} text-slate-100 gap-2`}>
                         <CustomInput label='Título' placeholder='Informe o título da sua mensagem' id='subject' type='text' onChange={e => setSubject(e.currentTarget.value)} />
