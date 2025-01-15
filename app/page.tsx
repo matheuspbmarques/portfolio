@@ -1,7 +1,7 @@
 'use client'
 
 //Components
-import Header from "@/components/Header"
+import Header from "@/components/sections/Header"
 
 //Configs
 import sectionsList from "@/configs/sectionsList"

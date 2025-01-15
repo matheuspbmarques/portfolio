@@ -4,7 +4,7 @@
 import Link from "next/link"
 
 //Components
-import Icons from "./Icons"
+import Icons from "../ui/Icons"
 
 //Configs
 import socialMediaList from "@/configs/socialMediaList"

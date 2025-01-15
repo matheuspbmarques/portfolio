@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import CustomInput from './CustomInput'
-import CustomTextArea from './CustomTextArea'
+import CustomInput from '../ui/CustomInput'
+import CustomTextArea from '../ui/CustomTextArea'
 import fonts from '@/configs/fonts'
 
 interface ContactProps{

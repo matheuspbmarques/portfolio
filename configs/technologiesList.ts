@@ -44,10 +44,26 @@ const technologiesList:Array<TechnologiesListProps> = [
     },
     {
         name: 'Nest',
+        level: 'advanced'
+    },
+    {
+        name: 'Linux',
+        level: 'advanced'
+    },
+    {
+        name: 'Docker',
+        level: 'advanced'
+    },
+    {
+        name: 'PHP',
         level: 'intermedium'
     },
     {
         name: 'Jest',
+        level: 'intermedium'
+    },
+    {
+        name: 'Laravel',
         level: 'intermedium'
     },
     {
@@ -71,10 +87,6 @@ const technologiesList:Array<TechnologiesListProps> = [
         level: 'intermedium'
     },
     {
-        name: 'PHP',
-        level: 'intermedium'
-    },
-    {
         name: 'React Native',
         level: 'intermedium'
     },
@@ -83,15 +95,7 @@ const technologiesList:Array<TechnologiesListProps> = [
         level: 'intermedium'
     },
     {
-        name: 'Linux',
-        level: 'intermedium'
-    },
-    {
         name: 'Prisma',
-        level: 'basic'
-    },
-    {
-        name: 'Flutter',
         level: 'basic'
     }
 ]

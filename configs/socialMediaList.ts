@@ -1,5 +1,5 @@
 //Props
-import type { NamesTypes } from "@/components/Icons"
+import type { NamesTypes } from "@/components/ui/Icons"
 import type { UrlObject } from "url"
 interface SocialmediaListProps{
     url: string | UrlObject,

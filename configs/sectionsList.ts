@@ -1,9 +1,9 @@
 //Sections
-import About from "@/components/About"
-import Projects from "@/components/Projects"
-import Technologies from "@/components/Technologies"
-import Contact from "@/components/Contact"
-import Footer from "@/components/Footer"
+import About from "@/components/sections/About"
+import Projects from "@/components/sections/Projects"
+import Technologies from "@/components/sections/Technologies"
+import Contact from "@/components/sections/Contact"
+import Footer from "@/components/sections/Footer"
 
 interface SelectionListProps{
     nameInHeader?: string,
@@ -20,7 +20,7 @@ const sectionsList:Array<SelectionListProps> = [
     },
     {
         nameInHeader: 'Projetos',
-        title: 'Projetos',
+        title: 'Projetos Reais',
         sectionId: 'projects',
         sectionComponent: Projects
     },

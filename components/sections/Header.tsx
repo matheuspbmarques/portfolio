@@ -4,7 +4,7 @@
 import { useState, useRef } from 'react'
 
 //Components
-import CustomLink from "@/components/CustomLink"
+import CustomLink from "@/components/ui/CustomLink"
 
 //Configs
 import sectionsList from "@/configs/sectionsList"
