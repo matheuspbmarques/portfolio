@@ -40,7 +40,7 @@ export default function ProjectCard({
                         <p className={`${fonts.kanitText.className} text-sm text-slate-100`}>{ description }</p>
                     </div>{/**Info */}
 
-                    <Link href={access} className={`${fonts.kanitText.className} text-sm text-slate-100 p-2 rounded-lg text-center custom-gradient`}>Acessar</Link>
+                    <Link href={access} target="_black" className={`${fonts.kanitText.className} text-sm text-slate-100 p-2 rounded-lg text-center custom-gradient`}>Acessar</Link>
                 </div>
 
             </div>
