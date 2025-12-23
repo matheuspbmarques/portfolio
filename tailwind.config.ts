@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: '#630FBD',
         blue: {
           default: '#06B6D4'
         },
