@@ -12,7 +12,7 @@ export function Main() {
           <SymbolToDown />
         </span>
       </div>
-      <p className={`text-2xl mt-4 px-8`}>
+      <p className={`text-2xl mt-4 px-8 ${fonts.baiJamjuree[400]}`}>
         Trabalho com TI a 7 anos, sendo 4 anos como Desenvolvedor.
       </p>
     </main>
