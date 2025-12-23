@@ -12,9 +12,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="pt-br">
-      <body className={baiJamjuree[400]}>{children}</body>
-    </html>
-  );
+  return <html lang="pt-br">{children}</html>;
 }
