@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#630FBD',
+        foreground: '#F1E8FB',
         blue: {
           default: '#06B6D4'
         },
