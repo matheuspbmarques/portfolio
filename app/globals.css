@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-primary text-foreground
-}
-
 .custom-gradient{
   background: linear-gradient(90deg, #06B6D4, #9747FF 25%, #9747FF 25%, #06B6D4);
   background-size: 400% 100%;
