@@ -1,7 +1,4 @@
-import { Kanit, Bai_Jamjuree } from 'next/font/google'
-
-const kanitText = Kanit({ weight: '400', subsets: ['latin'] })
-const kanitSmallTitle = Kanit({ weight: '700', subsets: ['latin'] })
+import { Bai_Jamjuree } from "next/font/google";
 
 const baiJamjuree200 = Bai_Jamjuree({ weight: "200", subsets: ["latin"] });
 const baiJamjuree300 = Bai_Jamjuree({ weight: "300", subsets: ["latin"] });
@@ -20,9 +17,7 @@ const baiJamjuree = {
 };
 
 const fonts = {
-    kanitText,
-    kanitSmallTitle,
-    baiJamjuree
-}
+  baiJamjuree,
+};
 
-export default fonts
+export default fonts;
