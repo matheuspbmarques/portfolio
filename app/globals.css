@@ -1,33 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.custom-gradient{
-  background: linear-gradient(90deg, #06B6D4, #9747FF 25%, #9747FF 25%, #06B6D4);
-  background-size: 400% 100%;
-  background-position: 0% 50%;
-  transition: all 300ms ease-in-out;
-}
-
-.custom-gradient:hover{
-  background-position: 50% 100%;
-  box-shadow: #06B6D475 0 0 15px;
-}
-
-.custom-gradient-infinit{
-  background: linear-gradient(90deg, #06B6D4, #9747FF 25%, #9747FF 25%, #06B6D4);
-  background-size: 400% 100%;
-  animation: bg-animate infinite 5s ease;
-}
-
-@keyframes bg-animate {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
