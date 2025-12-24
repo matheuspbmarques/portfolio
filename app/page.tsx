@@ -3,7 +3,7 @@
 //Components
 import Header from "@/app/_components/Header";
 import { Main } from "./_components/Main";
-import { Experiences } from "./_components/sections/experiences/Experiences";
+import { Experiences } from "./_components/sessions/experiences/Experiences";
 
 export default function Home() {
   return (
