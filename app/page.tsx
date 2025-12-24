@@ -4,6 +4,7 @@
 import Header from "@/app/_components/Header";
 import { Main } from "./_components/Main";
 import { Experiences } from "./_components/sessions/experiences/Experiences";
+import { Projects } from "./_components/sessions/projects/Projects";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Main />
       <Experiences />
+      <Projects />
     </body>
   );
 }
