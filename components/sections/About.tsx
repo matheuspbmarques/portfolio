@@ -9,7 +9,7 @@ interface AboutProps{
 
 export default function About({ id }:AboutProps){
     return(
-        <section id={id} className="flex gap-2 px-6 py-8 sm:gap-8 items-center max-w-3xl mx-auto">
+        <section id={id} className="flex gap-2 px-6 py-8 sm:gap-8 items-center max-w-5xl mx-auto">
             <div className="flex-1 flex flex-col gap-8">
                 <h2 className={`${fonts.kanitText.className} text-slate-100 text-2xl sm:text-3xl`}>Olá, me chamo Matheus, sou dev {`<FullStack />`}</h2>
                 <a href="matheus-marques.pdf" download className={`p-2 rounded-lg custom-gradient w-max ${fonts.kanitText.className} text-slate-100`}>
