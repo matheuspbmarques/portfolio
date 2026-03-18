@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import CustomInput from "../ui/CustomInput";
 import CustomTextArea from "../ui/CustomTextArea";
 import fonts from "@/configs/fonts";
@@ -12,9 +10,6 @@ interface ContactProps {
 }
 
 export default function Contact({ id }: ContactProps) {
-  const [subject, setSubject] = useState<string>();
-  const [message, setMessage] = useState<string>();
-
   return (
     <section id={id} className="bg-slate-800">
       <div className="mx-auto flex flex-col px-6 py-8 gap-4 max-w-5xl">
@@ -32,7 +27,20 @@ export default function Contact({ id }: ContactProps) {
               height={6 * 64}
             />
           </div>
-          <div
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+
+              const formData = new FormData(e.target);
+
+              const subject = formData.get("subject");
+              const message = formData.get("message");
+
+              location.replace(
+                `mailto:matheuspbmarques@hotmail.com?subject=${subject}&body=${message}`,
+              );
+            }}
+            action={"sendEmail(this)"}
             className={`flex-1 flex flex-col ${fonts.kanitText.className} text-slate-100 gap-2`}
           >
             <CustomInput
@@ -40,21 +48,21 @@ export default function Contact({ id }: ContactProps) {
               placeholder="Informe o título da sua mensagem"
               id="subject"
               type="text"
-              onChange={(e) => setSubject(e.currentTarget.value)}
+              name="subject"
             />
             <CustomTextArea
               label="Mensagem"
               placeholder="Deixe a sua mensagem aqui"
               id="message"
-              onChange={(e) => setMessage(e.currentTarget.value)}
+              name="message"
             />
-            <Link
-              href={`mailto:matheuspbmarques@hotmail.com?subject=${subject}&body=${message}`}
+            <button
+              type="submit"
               className="custom-gradient rounded-lg p-2 text-center w-full"
             >
               Enviar
-            </Link>
-          </div>
+            </button>
+          </form>
         </div>
       </div>
     </section>
