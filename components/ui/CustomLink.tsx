@@ -1,12 +1,4 @@
-'use client'
-
-//React
-import { useRef } from 'react'
-
-//Next
 import Link from "next/link"
-
-//Configs
 import fonts from "@/configs/fonts"
 
 interface CustomLinkProps{
@@ -15,26 +7,14 @@ interface CustomLinkProps{
     onClick?: React.MouseEventHandler<HTMLAnchorElement>
 }
 
-export default function CustomLink({ text, link, onClick }:CustomLinkProps){
-    const lastSpanRef = useRef<HTMLSpanElement>(null)
-
+export default function CustomLink({ text, link }:CustomLinkProps){
     return(
         <Link
             href={`#${link}`}
-            className={`${fonts.kanitText.className} text-sm text-slate-100 p-2 flex flex-col`}
-            onMouseOver={() => {
-                lastSpanRef.current!.style.width = '100%'
-            }}
-            onMouseOut={() => {
-                lastSpanRef.current!.style.width = '0'
-            }}
-            onClick={onClick}
+            className={`${fonts.kanitText.className} text-sm text-slate-100 p-2 flex flex-col group`}
         >
             <span>{ text }</span>
-            <span className="w-0 h-0.5 bg-slate-100 duration-300" ref={lastSpanRef} style={{
-                boxShadow: '#06B6D4 0px 0px 25px',
-                background: 'linear-gradient(90deg, #06B6D4 0%, #9747FF 100%)'
-            }} />
+            <span className="w-0 h-0.5 bg-slate-100 duration-300 group-hover:last:w-full shadow-[0_0_25px_#06B6D4] bg-linear-90 from-blue-default to-purple-default" />
         </Link>
     )
 }
