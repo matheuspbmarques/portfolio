@@ -17,7 +17,7 @@ export default function About({ id }:AboutProps){
                 </a>
             </div>
             <div>
-                <div className="flex w-[160px] h-[160px] overflow-hidden rounded-full items-center justify-center sm:w-[200px] sm:h-[200px]">
+                <div className="flex w-40 h-40 overflow-hidden rounded-full items-center justify-center sm:w-50 sm:h-50">
                     <Image alt="Minha foto" src={'/assets/images/me.webp'} width={1024} height={1024} />
                 </div>
             </div>
