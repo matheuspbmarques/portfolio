@@ -1,4 +1,3 @@
-//Sections
 import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
 import Technologies from "@/components/sections/Technologies";

@@ -1,15 +1,7 @@
-"use client";
-
-//Next
 import Link from "next/link";
-
-//Components
 import Icons from "../ui/Icons";
-
-//Configs
 import socialMediaList from "@/configs/socialMediaList";
 
-//Props
 interface FooterProps {
   id?: string;
 }

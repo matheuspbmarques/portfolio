@@ -1,12 +1,4 @@
-"use client";
-
-//React
-import { useState, useRef } from "react";
-
-//Components
 import CustomLink from "@/components/ui/CustomLink";
-
-//Configs
 import sectionsList from "@/configs/sectionsList";
 
 export default function Header() {

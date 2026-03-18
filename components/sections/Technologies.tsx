@@ -1,16 +1,6 @@
-"use client";
-
-//React
-import { useState } from "react";
-
-//Next
-import Image from "next/image";
-
-//Configs
 import fonts from "@/configs/fonts";
 import technologiesList from "@/configs/technologiesList";
 
-//Props
 interface TechnologiesProps {
   id?: string;
 }

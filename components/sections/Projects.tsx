@@ -1,7 +1,4 @@
-//Components
 import ProjectCard from "../ProjectCard";
-
-//Configs
 import projectsList from "@/configs/projectsList";
 import fonts from "@/configs/fonts";
 
