@@ -18,7 +18,7 @@ export default function ProjectCard({
     access
 }:ProjectCardProps){
     return(
-        <div className="w-full custom-gradient rounded-2xl p-[2px]">
+        <div className="w-full custom-gradient rounded-2xl p-0.5">
             <div className="w-full h-full bg-slate-800 rounded-[14px] p-4 flex flex-col gap-4 md:flex-col">
 
                 {/**Image */}

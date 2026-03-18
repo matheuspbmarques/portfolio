@@ -18,8 +18,8 @@ interface TechnologiesProps{
 export default function Technologies({ id }:TechnologiesProps){
     const renderTechnologies = technologiesList.map((technology, i) => {
         return(
-            <li key={i} className={`custom-gradient p-[2px] rounded-lg flex cursor-pointer`}>
-                <div className={`h-full flex-1 bg-slate-900 rounded-[6px] ${fonts.kanitText.className} text-slate-100 flex justify-between p-2`}>
+            <li key={i} className={`custom-gradient p-0.5 rounded-lg flex cursor-pointer`}>
+                <div className={`h-full flex-1 bg-slate-900 rounded-md ${fonts.kanitText.className} text-slate-100 flex justify-between p-2`}>
                     <span>{ technology }</span>
                 </div>
             </li>

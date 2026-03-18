@@ -31,7 +31,7 @@ export default function CustomLink({ text, link, onClick }:CustomLinkProps){
             onClick={onClick}
         >
             <span>{ text }</span>
-            <span className="w-0 h-[2px] bg-slate-100 duration-300" ref={lastSpanRef} style={{
+            <span className="w-0 h-0.5 bg-slate-100 duration-300" ref={lastSpanRef} style={{
                 boxShadow: '#06B6D4 0px 0px 25px',
                 background: 'linear-gradient(90deg, #06B6D4 0%, #9747FF 100%)'
             }} />
