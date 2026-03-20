@@ -20,19 +20,15 @@ export default function ProjectCard({
   return (
     <div className="w-full custom-gradient rounded-2xl p-0.5">
       <div className="w-full h-full bg-slate-800 rounded-[14px] p-4 flex flex-col gap-4 md:flex-col">
-        {/**Image */}
-        <div className="w-full rounded-lg overflow-hidden">
+        {/* <div className="w-full rounded-lg overflow-hidden">
           <Image
             src={image}
             alt="Imagem do projeto"
             width={1024}
             height={768}
           />
-        </div>
-        {/**Image */}
-
+        </div> */}
         <div className="flex flex-col gap-4 sm:flex-1">
-          {/**Info */}
           <div className="flex flex-col gap-2 sm:flex-1">
             <h3
               className={`${fonts.kanitSmallTitle.className} text-xl text-slate-100`}
@@ -43,15 +39,6 @@ export default function ProjectCard({
               {description}
             </p>
           </div>
-          {/**Info */}
-
-          <Link
-            href={access}
-            target="_black"
-            className={`${fonts.kanitText.className} text-sm text-slate-100 p-2 rounded-lg text-center custom-gradient`}
-          >
-            Acessar
-          </Link>
         </div>
       </div>
     </div>
