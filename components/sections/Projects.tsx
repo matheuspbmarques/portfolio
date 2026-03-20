@@ -8,15 +8,7 @@ interface ProjectsProps {
 
 export default function Projects({ id }: ProjectsProps) {
   const renderProjects = projectsList.map((project, i) => {
-    return (
-      <ProjectCard
-        key={i}
-        access={project.url}
-        image={project.image}
-        description={project.description}
-        title={project.title}
-      />
-    );
+    return <ProjectCard key={i} {...project} />;
   });
 
   return (
