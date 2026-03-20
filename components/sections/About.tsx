@@ -26,7 +26,7 @@ export default function About({ id }: AboutProps) {
     >
       <div className="flex flex-col items-center mt-4 sm:items-start">
         <h1
-          className={`${fonts.kanitText.className} text-slate-100 text-2xl text-center sm:text-5xl sm:leading-12 lg:text-7xl sm:text-left lg:leading-20`}
+          className={`${fonts.kanitSmallTitle.className} text-slate-100 text-2xl text-center sm:text-5xl sm:leading-12 lg:text-7xl sm:text-left lg:leading-20`}
         >
           Matheus Marques,
           <br />
