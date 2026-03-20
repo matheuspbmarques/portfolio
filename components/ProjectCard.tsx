@@ -1,22 +1,37 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Link from "next/link";
-import Image from "next/image";
 import fonts from "@/configs/fonts";
-import { UrlObject } from "url";
-
-interface ProjectCardProps {
-  image: string | StaticImport;
-  title: string;
-  description: string;
-  access: string | UrlObject;
-}
+import { ProjectsList } from "@/configs/projectsList";
+import { Fragment } from "react/jsx-runtime";
 
 export default function ProjectCard({
-  image,
   title,
   description,
-  access,
-}: ProjectCardProps) {
+  tecnologies,
+}: ProjectsList) {
+  const renderDescription = description.map((descriptionText, index) => {
+    return (
+      <Fragment key={index}>
+        {index > 0 && (
+          <>
+            <br />
+            <br />
+          </>
+        )}
+        <span>{descriptionText}</span>
+      </Fragment>
+    );
+  });
+
+  const renderTecnologies = tecnologies.map((tecnologie, index) => {
+    return (
+      <li
+        key={index}
+        className={`${fonts.kanitText.className} text-sm text-white custom-gradient p-px rounded-full select-none`}
+      >
+        <span className="py-1 px-2 bg-slate-800 block rounded-full">{tecnologie}</span>
+      </li>
+    );
+  });
+
   return (
     <div className="w-full custom-gradient rounded-2xl p-0.5">
       <div className="w-full h-full bg-slate-800 rounded-[14px] p-4 flex flex-col gap-4 md:flex-col">
@@ -36,10 +51,11 @@ export default function ProjectCard({
               {title}
             </h3>
             <p className={`${fonts.kanitText.className} text-slate-100`}>
-              {description}
+              {renderDescription}
             </p>
           </div>
         </div>
+        <ul className="flex flex-wrap gap-1">{renderTecnologies}</ul>
       </div>
     </div>
   );
