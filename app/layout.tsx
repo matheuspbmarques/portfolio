@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { ME } from "@/constants";
-
-const inter = Inter({ subsets: ["latin"] });
+import fonts from "@/configs/fonts";
 
 export const metadata: Metadata = {
   title: "Matheus Marques",
@@ -51,7 +49,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={fonts.kanitText.className}>{children}</body>
     </html>
   );
 }
