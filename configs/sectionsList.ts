@@ -13,7 +13,7 @@ interface SelectionListProps {
 
 const sectionsList: Array<SelectionListProps> = [
   {
-    nameInHeader: "Sobre mim",
+    nameInHeader: "Sobre",
     sectionId: "about",
     sectionComponent: About,
   },
