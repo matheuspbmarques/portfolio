@@ -9,6 +9,14 @@ interface SocialmediaListProps {
 
 const socialMediaList: Array<SocialmediaListProps> = [
   {
+    icon: "whatsapp",
+    url: ME.WHATSAPP,
+  },
+  {
+    icon: "telegram",
+    url: ME.TELEGRAM,
+  },
+  {
     icon: "github",
     url: ME.GITHUB,
   },
