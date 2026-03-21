@@ -1,6 +1,7 @@
 import ProjectCard from "../ProjectCard";
 import projectsList from "@/configs/projectsList";
 import fonts from "@/configs/fonts";
+import { H2 } from "../ui/H2";
 
 interface ProjectsProps {
   id?: string;
@@ -14,11 +15,7 @@ export default function Projects({ id }: ProjectsProps) {
   return (
     <section id={id} className="bg-slate-800">
       <div className="flex flex-col px-6 py-8 gap-4 max-w-5xl mx-auto">
-        <h2
-          className={`${fonts.kanitSmallTitle.className} text-4xl text-slate-100`}
-        >
-          Projetos
-        </h2>
+        <H2>Projetos</H2>
         <div className="flex flex-col gap-4 md:grid md:grid-cols-2">
           {renderProjects}
         </div>

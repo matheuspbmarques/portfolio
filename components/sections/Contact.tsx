@@ -4,6 +4,7 @@ import Image from "next/image";
 import CustomInput from "../ui/CustomInput";
 import CustomTextArea from "../ui/CustomTextArea";
 import fonts from "@/configs/fonts";
+import { H2 } from "../ui/H2";
 
 interface ContactProps {
   id?: string;
@@ -13,11 +14,7 @@ export default function Contact({ id }: ContactProps) {
   return (
     <section id={id} className="bg-slate-800">
       <div className="mx-auto flex flex-col px-6 py-8 gap-4 max-w-5xl">
-        <h2
-          className={`${fonts.kanitSmallTitle.className} text-slate-100 text-2xl`}
-        >
-          Contate-me
-        </h2>
+        <H2>Contate-me</H2>
         <div className="flex gap-8">
           <div className="hidden sm:flex flex-1">
             <Image

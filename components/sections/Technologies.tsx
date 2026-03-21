@@ -1,5 +1,6 @@
 import fonts from "@/configs/fonts";
 import technologiesList from "@/configs/technologiesList";
+import { H2 } from "../ui/H2";
 
 interface TechnologiesProps {
   id?: string;
@@ -22,13 +23,9 @@ export default function Technologies({ id }: TechnologiesProps) {
   });
 
   return (
-    <section id={id} className="max-w-5xl flex flex-col mx-auto pt-8">
-      <h2
-        className={`${fonts.kanitSmallTitle.className} text-2xl text-slate-100 px-6`}
-      >
-        Tecnologias
-      </h2>
-      <ul className="flex flex-col gap-2 overflow-hidden px-6 pt-4 pb-8 sm:grid sm:grid-cols-3">
+    <section id={id} className="max-w-5xl flex flex-col mx-auto pt-8 px-6">
+      <H2>Tecnologias</H2>
+      <ul className="flex flex-col gap-2 overflow-hidden pt-4 pb-8 sm:grid sm:grid-cols-3">
         {renderTechnologies}
       </ul>
     </section>
