@@ -13,7 +13,9 @@ export default function About({ id }: AboutProps) {
     return (
       <li key={i}>
         <Link href={socialMedia.url}>
-          <Icons name={socialMedia.icon} />
+          <span className="fill-slate-100">
+            <Icons name={socialMedia.icon} />
+          </span>
         </Link>
       </li>
     );
