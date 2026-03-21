@@ -2,26 +2,28 @@
 
 import fonts from "@/configs/fonts";
 
-interface CustomLinkProps {
+type CustomLinkProps = {
   text?: string;
   link?: string;
-  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
-}
+};
 
-export default function CustomLink({ text, link }: CustomLinkProps) {
+export default function NavButton({ text, link }: CustomLinkProps) {
   return (
     <button
-      className={`${fonts.kanitText.className} text-sm text-slate-100 p-2 flex flex-col group`}
+      className={`${fonts.kanitText.className} text-sm text-slate-100 p-2 flex flex-col group cursor-pointer`}
       onClick={() => {
         if (link) {
           const sectionTop = Number(
             document.getElementById(link)?.getBoundingClientRect().top,
           );
 
-          const scrollTo = sectionTop < 0 ? window.scrollY - Math.abs(sectionTop) : window.scrollY + Math.abs(sectionTop);
+          const scrollTo =
+            sectionTop < 0
+              ? window.scrollY - Math.abs(sectionTop)
+              : window.scrollY + Math.abs(sectionTop);
 
           window.scrollTo({
-            top: scrollTo - 86
+            top: scrollTo - 86,
           });
         }
       }}

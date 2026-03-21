@@ -1,11 +1,11 @@
-import CustomLink from "@/components/ui/CustomLink";
+import NavButton from "@/components/ui/NavButton";
 import sectionsList from "@/configs/sectionsList";
 
 export default function Header() {
   const renderNavList = sectionsList.map((section, i) => {
     if (section.nameInHeader) {
       return (
-        <CustomLink
+        <NavButton
           key={i}
           text={section.nameInHeader}
           link={section.sectionId}
