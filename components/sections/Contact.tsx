@@ -22,7 +22,7 @@ export default function Contact({ id }: ContactProps) {
   return (
     <footer id={id} className="bg-slate-800">
       <div className="mx-auto flex flex-col px-6 py-8 max-w-5xl">
-        <ul className="flex flex-col justify-center gap-1 mt-4">
+        <ul className="flex flex-col justify-center gap-1">
           <li className="text-center">+55 (91) 99314-0809</li>
           <li className="text-center">matheuspbmarques@protonmail.com</li>
         </ul>
