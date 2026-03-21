@@ -1,4 +1,5 @@
 import type { NamesTypes } from "@/components/ui/Icons";
+import { ME } from "@/constants";
 import type { UrlObject } from "url";
 
 interface SocialmediaListProps {
@@ -9,11 +10,11 @@ interface SocialmediaListProps {
 const socialMediaList: Array<SocialmediaListProps> = [
   {
     icon: "github",
-    url: "https://github.com/matheuspbmarques",
+    url: ME.GITHUB,
   },
   {
     icon: "linkedin",
-    url: "https://www.linkedin.com/in/matheus-marques-b39880154/",
+    url: ME.LINKEDIN,
   },
 ];
 
