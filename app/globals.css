@@ -24,6 +24,10 @@
   }
 }
 
+* {
+  @apply text-slate-100;
+}
+
 body {
   @apply bg-slate-900;
 }
