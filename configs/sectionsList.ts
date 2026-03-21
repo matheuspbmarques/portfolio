@@ -2,7 +2,6 @@ import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
 import Technologies from "@/components/sections/Technologies";
 import Contact from "@/components/sections/Contact";
-import Footer from "@/components/sections/Footer";
 
 interface SelectionListProps {
   nameInHeader?: string;
@@ -34,9 +33,6 @@ const sectionsList: Array<SelectionListProps> = [
     title: "Contato",
     sectionId: "contact",
     sectionComponent: Contact,
-  },
-  {
-    sectionComponent: Footer,
   },
 ];
 
