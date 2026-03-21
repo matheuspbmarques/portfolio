@@ -1,67 +1,33 @@
-"use client";
+import socialMediaList from "@/configs/socialMediaList";
+import Link from "next/link";
+import Icons from "../ui/Icons";
 
-import Image from "next/image";
-import CustomInput from "../ui/CustomInput";
-import CustomTextArea from "../ui/CustomTextArea";
-import fonts from "@/configs/fonts";
-import { H2 } from "../ui/H2";
-
-interface ContactProps {
+type ContactProps = {
   id?: string;
-}
+};
 
 export default function Contact({ id }: ContactProps) {
+  const renderSocialMedia = socialMediaList.map(({ icon, url }, index) => {
+    return (
+      <li key={index}>
+        <Link href={url}>
+          <span className="fill-slate-100">
+            <Icons name={icon} />
+          </span>
+        </Link>
+      </li>
+    );
+  });
+
   return (
-    <section id={id} className="bg-slate-800">
-      <div className="mx-auto flex flex-col px-6 py-8 gap-4 max-w-5xl">
-        <H2>Contate-me</H2>
-        <div className="flex gap-8">
-          <div className="hidden sm:flex flex-1">
-            <Image
-              alt="Ilustração de e-mail"
-              src={"/assets/svgs/illustrations/email.svg"}
-              width={6 * 64}
-              height={6 * 64}
-            />
-          </div>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-
-              const formData = new FormData(e.target);
-
-              const subject = formData.get("subject");
-              const message = formData.get("message");
-
-              location.replace(
-                `mailto:matheuspbmarques@hotmail.com?subject=${subject}&body=${message}`,
-              );
-            }}
-            action={"sendEmail(this)"}
-            className={`flex-1 flex flex-col ${fonts.kanitText.className} text-slate-100 gap-2`}
-          >
-            <CustomInput
-              label="Título"
-              placeholder="Informe o título da sua mensagem"
-              id="subject"
-              type="text"
-              name="subject"
-            />
-            <CustomTextArea
-              label="Mensagem"
-              placeholder="Deixe a sua mensagem aqui"
-              id="message"
-              name="message"
-            />
-            <button
-              type="submit"
-              className="custom-gradient rounded-lg p-2 text-center w-full"
-            >
-              Enviar
-            </button>
-          </form>
-        </div>
+    <footer id={id} className="bg-slate-800">
+      <div className="mx-auto flex flex-col px-6 py-8 max-w-5xl">
+        <ul className="flex flex-col justify-center gap-1 mt-4">
+          <li className="text-center">+55 (91) 99314-0809</li>
+          <li className="text-center">matheuspbmarques@protonmail.com</li>
+        </ul>
+        <ul className="mt-4 flex gap-4 justify-center">{renderSocialMedia}</ul>
       </div>
-    </section>
+    </footer>
   );
 }
